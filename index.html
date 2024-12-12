@@ -12,8 +12,8 @@
             <img src="mountains_behind.png" id="mountains_behind">
             <h2 id="text1">Твоя уверенность и харизма</h2>
             <h2 id="text2">Притягивают всех вокруг</h2>
-            <h2 id="text1">Улыбайся чаще</h2>
-            <h2 id="text2">Тебе идёт</h2>
+            <h2 id="text3">Улыбайся чаще</h2>
+            <h2 id="text4">Тебе идёт</h2>
             <img src="mountains_front.png" id="mountains_front">
         </section>
         <div class="sec" id="sec">
@@ -200,6 +200,8 @@
             let mountains_behind = document.getElementById('mountains_behind');
             let text1 = document.getElementById('text1');
             let text2 = document.getElementById('text2');
+            let text3 = document.getElementById('text3');
+            let text4 = document.getElementById('text4');
             let mountains_front = document.getElementById('mountains_front');
 
             window.addEventListener('scroll', function() {
@@ -210,6 +212,8 @@
                 mountains_front.style.top = 0 + 'px';
                 text1.style.marginRight = value * 4 + 'px';
                 text2.style.marginRight = value * -4 + 'px';
+                text3.style.marginRight = value * 4 + 'px';
+                text4.style.marginRight = value * -4 + 'px';
             })
         </script>
     </body>
